@@ -1,6 +1,5 @@
 package ayds.lisboa1.lastfm
 
-import ayds.lisboa.songinfo.otherdetails.model.entities.LastFMArtistBiography
 import retrofit2.Response
 
 internal class LastFMServiceImpl (
