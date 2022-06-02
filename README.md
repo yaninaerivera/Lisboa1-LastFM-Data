@@ -23,13 +23,13 @@ Agregar el submodulo al proyecto:
 
 Agregar al archivo settings.gradle del proyecto las siguientes lineas:
 
-> include ':WikipediaData'
-> project(':WikipediaData').projectDir = new File('libs/WikipediaData')
+> include ':lastfmdata'
+> project(':lastfmdata').projectDir = new File('libs/LastFMData')
 
 Sincronizar gradle en el proyecto
 
 Agregar al archivo build.gradle del proyecto la siguiente dependencia:
 
-> implementation project(":WikipediaData")
+> implementation project(":lastfmdata")
 
 Sincronizar gradle en el proyecto
