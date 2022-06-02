@@ -12,7 +12,7 @@ private const val ARTIST_NAME = "name"
 private const val ARTIST_BIOGRAPHY = "bio"
 private const val ARTIST_BIOGRAPHY_EXTRACT = "content"
 private const val ARTIST_BIOGRAPHY_URL = "url"
-private const val SERVICE_LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lastfm_logo.svg/320px-Lastfm_logo.svg.png"
+private const val LASTFM_LOGO_URL = "logo"
 
 internal class JsonToArtistBiographyResolver(): LastFMToArtistBiographyResolver {
 

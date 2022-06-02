@@ -11,8 +11,12 @@ data class LastFMArtistBiography(
     override val artist: String,
     override val biography: String,
     override val articleUrl: String,
-    override val logoUrl: String
-): ArtistBiography {}
+    override val logoUrl: String = LASTFM_LOGO_URL
+): ArtistBiography {
+    companion object{
+        private const val LASTFM_LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lastfm_logo.svg/320px-Lastfm_logo.svg.png"
+    }
+}
 
 object EmptyArtistBiography : ArtistBiography {
     override val artist: String = ""
