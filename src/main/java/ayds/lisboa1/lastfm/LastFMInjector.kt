@@ -1,5 +1,8 @@
 package ayds.lisboa1.lastfm
 
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+
 object LastFMInjector {
 
     private const val LASTFM_URL = "https://ws.audioscrobbler.com/2.0/"
