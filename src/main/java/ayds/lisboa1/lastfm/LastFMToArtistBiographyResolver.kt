@@ -47,7 +47,7 @@ internal class JsonToArtistBiographyResolver(): LastFMToArtistBiographyResolver 
     }
 
     private fun getLogoUrl(): String {
-        return SERVICE_LOGO_URL
+        return LASTFM_LOGO_URL
     }
 
 }
