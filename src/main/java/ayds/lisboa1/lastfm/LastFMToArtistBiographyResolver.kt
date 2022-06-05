@@ -12,7 +12,6 @@ private const val ARTIST_NAME = "name"
 private const val ARTIST_BIOGRAPHY = "bio"
 private const val ARTIST_BIOGRAPHY_EXTRACT = "content"
 private const val ARTIST_BIOGRAPHY_URL = "url"
-private const val LASTFM_LOGO_URL = "logo"
 
 internal class JsonToArtistBiographyResolver(): LastFMToArtistBiographyResolver {
 
@@ -20,7 +19,7 @@ internal class JsonToArtistBiographyResolver(): LastFMToArtistBiographyResolver 
         try {
             serviceData?.getItem()?.let { item ->
                 LastFMArtistBiography(
-                    item.getArtist(), item.getBiography(),  item.getArticleUrl(), getLogoUrl()
+                    item.getArtist(), item.getBiography(),  item.getArticleUrl()
                 )
             }
         } catch (e: Exception) {
@@ -44,10 +43,6 @@ internal class JsonToArtistBiographyResolver(): LastFMToArtistBiographyResolver 
 
     private fun JsonObject.getArticleUrl(): String {
         return this[ARTIST_BIOGRAPHY_URL].asString
-    }
-
-    private fun getLogoUrl(): String {
-        return LASTFM_LOGO_URL
     }
 
 }
